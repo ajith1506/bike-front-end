@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+#navbar {
+  background-color: #5353fd83;
+  height: 70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+#navbarBG {
+  background-color: #5353fde3;
+  transition: all 0.5s ease;
+}
+#liColor {
+  color: #fff;
+}
+#img {
+  filter: opacity(90%);
+}
+.logo {
+  width: 100%;
+  height: 40px;
+  font-size: 2rem;
+  color: #ffffffec;
+  font-weight: 600;
+  font-family: "Lobster", cursive;
+}
+.active {
+  border-bottom: 1px solid #000;
+}
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  padding: initial !important;
+}
+.arrow {
+  color: #fff !important;
+  border: none !important;
+  font-size: 35px !important;
+  outline: none !important;
+}
+
+.logoTwo {
+  font-size: 2rem;
+  color: #fb4848;
+  font-family: "Lobster", cursive;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+}
+.navContainer .carousel-inner .carousel-item {
+  height: 100vh;
+}
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
+}
+.Typical {
+  transition: all 0.5s ease;
+}
+.banner {
+  object-fit: cover;
+}
+.banner {
+  width: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  object-fit: cover;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 9.25rem;
+  padding-bottom: 7.25rem !important;
+  color: #fff;
+  background-image: linear-gradient(45deg, #000000ad, transparent);
+  text-align: center;
+}
+.slideTitle {
+  font-size: 6rem;
+  text-shadow: 3px 0px #fb4848;
+  color: #ffffff;
+  background: #302f2f63;
+  font-family: "Lobster", cursive;
+}
+.slideText {
+  font-size: 2rem;
+  font-family: "Lobster", cursive;
+  color: #ffffffe1;
+  background: #302f2f63;
+}
+.slideContact {
+  padding: 10px 35px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 600;
+  margin: 10px;
+}
+#item {
+  color: #fb4848;
+  transition: all 0.5s ease;
+}
+#item:hover {
+  text-decoration: underline;
+  color: #fff;
+  text-decoration-color: #fff;
+}
+.slideContact a {
+  text-decoration: none;
+}
+.slideContact:hover {
+  background-color: #fb4848;
+  transition: 0.5s all;
+  color: #555;
+  font-weight: 600;
+}
+@media only screen and (max-width: 468px) {
+  #navbar {
+    background: #080707d7;
+  }
+  .slideTitle {
+    font-size: 2rem;
+  }
+}

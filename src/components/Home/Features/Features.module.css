@@ -1,0 +1,141 @@
+.wrapper {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 1rem 0.8rem 1rem 1rem;
+  transition: transform 0.4s;
+  box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+}
+.wrapper:hover {
+  transform: translateY(10px);
+}
+
+ul li {
+  color: #555555d0;
+  font-size: 0.98rem;
+}
+
+.featureIcon {
+  background: #a4a4ff70;
+  max-width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  border-radius: 180px 323px 3px 264px;
+  justify-content: center;
+  box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  transition: all 0.5s ease;
+}
+.featureTimeIcon {
+  background: #faf4ff;
+  max-width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  border-radius: 180px 323px 3px 264px;
+  justify-content: center;
+  box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  transition: all 0.5s ease;
+}
+.featurePhnIcon {
+  background: #fff2f2;
+  max-width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  border-radius: 180px 323px 3px 264px;
+  justify-content: center;
+  box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 10px 10px 37px -14px rgba(0, 0, 0, 0.41);
+  transition: all 0.5s ease;
+}
+.wrapper:hover .featureIcon {
+  border-radius: 18px 32px 50px 26px;
+}
+.wrapper:hover .featureTimeIcon {
+  border-radius: 18px 32px 50px 26px;
+}
+.wrapper:hover .featurePhnIcon {
+  border-radius: 18px 32px 50px 26px;
+}
+
+.MesgIcon {
+  font-size: 1.6rem;
+  color: #5858f5b7;
+}
+.timeIcon {
+  font-size: 1.6rem;
+  color: #d57cd1;
+}
+.phnIcon {
+  font-size: 1.6rem;
+  color: #ffb9b9;
+}
+.FeatureTitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 7px;
+  font-weight: 600;
+  color: #000000c0;
+}
+.btnReadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #666666dc;
+  color: #000000e5;
+  padding: 5px 1rem;
+  margin-top: 11px;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #ffffffe3;
+}
+.btnReadmore:hover {
+  background: #1f1fecd8;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6d6969c9;
+  padding-top: 5px;
+  font-size: 0.98rem;
+}
+.phnNumber {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #000000c0;
+}
+.phoneText {
+  margin-top: 1.5rem;
+  color: #6d6969c9;
+  display: block;
+  text-align: center;
+  align-items: center;
+  font-size: 0.98rem;
+}
+@media only screen and (max-width: 468px) {
+  .wrapper {
+    height: 20rem;
+    margin: 1rem;
+  }
+}
