@@ -87,13 +87,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link fw-bold"
                   id={color ? style.item && style.liColor : style.item}
-                  href="#Products"
+                  to="/Products"
                 >
                   Products
-                </a>
+                </Link>
               </li>
               {/* <li className="nav-item">
                                 <Link className="nav-link fw-bold" id={color ? style.item && style.liColor : style.item} to="/blogs">Blogs</Link>
@@ -162,7 +162,7 @@ const Navbar = () => {
                 {" "}
                 <button className={style.slideContact}>Contact Now</button>{" "}
               </Link>
-              <Link to="/login">
+              <Link to="/allServices">
                 {" "}
                 <button className={style.slideContact}>Book Now</button>{" "}
               </Link>

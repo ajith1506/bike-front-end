@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
-import AddReview from "../AddReview/AddReview";
 import AddAdmin from "../AddAdmin/AddAdmin";
 import AddService from "../AddService/AddService";
 import ManageServices from "../ManageServices/ManageServices";
@@ -21,9 +20,7 @@ export default function RouteDiv() {
         <Route exact path={`${path}/welcome`}>
           <WelcomePage />
         </Route>
-        <Route path={`${path}/addReview`}>
-          <AddReview />
-        </Route>
+
         <Route path={`${path}/addAdmin`}>
           {decodedTkn.isAdmin === true ? <AddAdmin /> : <Home />}
         </Route>

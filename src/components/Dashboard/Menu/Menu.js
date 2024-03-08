@@ -57,9 +57,6 @@ const Menu = ({ isOpen, setOpen }) => {
         ) : (
           <>
             <li onClick={() => setOpen(false)}>
-              <Link to={`${url}/addReview`}>Add Reviews</Link>
-            </li>
-            <li onClick={() => setOpen(false)}>
               <Link to={`${url}/ordered`}>Order list</Link>
             </li>
             <li onClick={() => setOpen(false)}>

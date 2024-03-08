@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../../../Context/AuthContext";
 import Swal from "sweetalert2";
+import GlobalNavbar from "../../GlobalNavbar/GlobalNavbar";
 
 const Services = () => {
   const [service, setService] = useState([]);
@@ -49,6 +50,7 @@ const Services = () => {
   });
   return (
     <section className="container mt-5 pt-5 mb-5">
+      <GlobalNavbar />
       <div className={style.titleText}>
         <h2 className={style.title}>
           Our<span className={style.titleHalf}> Services</span>

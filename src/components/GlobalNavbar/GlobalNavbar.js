@@ -69,6 +69,15 @@ export default function GlobalNavbar() {
                   Services
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link fw-bold"
+                  id={style.item}
+                  to="/products"
+                >
+                  Products
+                </Link>
+              </li>
 
               <li className="nav-item">
                 <Link className="nav-link fw-bold" id={style.item} to="/about">

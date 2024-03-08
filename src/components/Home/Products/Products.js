@@ -4,6 +4,7 @@ import Cart from "./Cart/Cart";
 // import pdt from '../../../Data/products';
 import ProductItem from "./ProductItem/ProductItem";
 import axios from "axios";
+import GlobalNavbar from "../../GlobalNavbar/GlobalNavbar";
 
 export default function Products() {
   // const [total, setTotal] = useContext(UserContext);
@@ -45,6 +46,7 @@ export default function Products() {
 
   return (
     <div id="Products">
+      <GlobalNavbar />
       <section className="mt-5 pt-5" id={style.Products}>
         <div className={style.titleText}>
           <h2 className={style.title}>

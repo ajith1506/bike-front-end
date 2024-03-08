@@ -6,7 +6,6 @@ import Contact from "./components/Home/Contact/Contact";
 import Aboutus from "./components/Aboutus/Aboutus";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import Login from "./components/Login/Login/Login";
-import AllServices from "./components/AllServices/AllServices";
 // import NoMatch from './components/NoMatch/NoMatch';
 import Payment from "./components/Payment/Payment";
 import WelcomePage from "./components/Dashboard/WelcomePage/WelcomePage";
@@ -17,6 +16,8 @@ import GotoTop from "./components/Home/GotoTop/GotoTop";
 import Order from "./components/Dashboard/Order/Order";
 import PDPayment from "./components/Payment/PDPayment";
 import ProductsDetails from "./components/ProductDetails/ProductsDetails";
+import Services from "./components/Home/Services/Services";
+import Products from "./components/Home/Products/Products";
 // import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 // export const UserContext = createContext();
@@ -46,7 +47,10 @@ function App() {
           <Signup />
         </Route>{" "}
         <Route path="/allServices">
-          <AllServices />
+          <Services />
+        </Route>
+        <Route path="/products">
+          <Products />
         </Route>
         <Route path="/details/:_id">
           <ServiceDetails />
