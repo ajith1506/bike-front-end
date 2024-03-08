@@ -1,48 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Appointment.module.css";
 import LeftMan from "../../../img/bikerepair2 (1).jpg";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { useHistory } from "react-router-dom";
+
 export default function Appointment() {
   const history = useHistory();
+  const [loading, setLoading] = useState(false);
+
   function sendMail(e) {
     e.preventDefault();
+    setLoading(true);
+
     emailjs
       .sendForm(
-        "service_pyu83mf",
-        "template_i440tzb",
+        "service_prk10jd",
+        "template_46ktyhj",
         e.target,
-        "user_Np4T9qbdgv2Y7ju11odv7"
+        "OLJgbdK1FoBr1Sxy8"
       )
       .then((response) => {
+        setLoading(false);
         if (response.status === 200) {
           Swal.fire({
-            title: "Hey yoo dude!",
-            text: "Your email has been sent Rahat successfully",
+            title: "Success!",
+            text: "Your email has been sent successfully.",
             icon: "success",
           }).then((result) => {
-            if (result) {
+            if (result.isConfirmed) {
               history.push("/");
-              console.log(result);
             }
           });
-        }
-        if (response.status === 401) {
-          alert("data is not uploaded");
+        } else {
+          Swal.fire({
+            title: "Error!",
+            text: "Failed to send email. Please try again later.",
+            icon: "error",
+          });
         }
       })
       .catch((err) => {
+        setLoading(false);
         console.log(err.message);
+        Swal.fire({
+          title: "Error!",
+          text: "An error occurred. Please try again later.",
+          icon: "error",
+        });
       });
   }
+
   return (
     <section className="mb-2" id={style.appointment}>
       <div data-aos="fade-up" className="container">
         <div className={style.headTitle}>
-          <h3 className={style.title}>get free appointment</h3>
+          <h3 className={style.title}>Get a free appointment</h3>
           <FontAwesomeIcon icon={faChevronDown} className={style.fontIcon} />
         </div>
         <div className="row">
@@ -61,27 +76,35 @@ export default function Appointment() {
                       className="form-control"
                       placeholder="Email"
                       name="user_email"
+                      required
                     />
                   </div>
                   <div className="col-md-6">
                     <input
-                      type="name"
+                      type="text"
                       className="form-control"
                       placeholder="Name"
                       name="name"
+                      required
                     />
                   </div>
                   <div className="col-12">
                     <textarea
-                      type="text"
                       rows="5"
                       className="form-control"
                       placeholder="Your message"
                       name="message"
+                      required
                     />
                   </div>
                   <div className="col-12">
-                    <button className={style.slideContact}>Send message</button>
+                    <button
+                      className={style.slideContact}
+                      type="submit"
+                      disabled={loading}
+                    >
+                      {loading ? "Sending..." : "Send Message"}
+                    </button>
                   </div>
                 </form>
               </div>

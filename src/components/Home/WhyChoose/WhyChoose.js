@@ -40,7 +40,7 @@ const WhyChoose = () => {
               <li>✔ Over 900 Five Star Reviews</li>
               <li>✔ Free Diagnosis & Brake Checks</li>
               <li>✔ No Appointment Necessary</li>
-              <li>✔ Free Loaner Cars or Shuttle</li>
+              <li>✔ Free Loaner Bikes or Shuttle</li>
               <li>✔ 2 Year Warranty on Service</li>
               <li>✔ Serving Los Angeles Over 25 Years</li>
               <li>✔ Lifetime Warranty on Body Work</li>

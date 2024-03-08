@@ -115,7 +115,7 @@ export default function AddService() {
         </div>
         <div className="col-md-9">
           <label htmlFor="inputZip" className="form-label">
-            Chose file
+            Choose file
           </label>
           <input
             type="file"

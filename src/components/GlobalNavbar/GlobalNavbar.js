@@ -84,6 +84,7 @@ export default function GlobalNavbar() {
                   Contact
                 </Link>
               </li>
+
               <li className="nav-item">
                 {user ? (
                   <button

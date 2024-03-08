@@ -156,13 +156,13 @@ const Navbar = () => {
             <div className="carousel-caption">
               <h2 className={style.slideTitle}>We Are Professional </h2>
               <h3 className={style.slideText}>
-                we will modify your bike as you want will fix your car problem
+                we will modify your bike as you want will fix your bike problem
               </h3>
               <Link to="/contacts">
                 {" "}
                 <button className={style.slideContact}>Contact Now</button>{" "}
               </Link>
-              <Link to="/contacts">
+              <Link to="/login">
                 {" "}
                 <button className={style.slideContact}>Book Now</button>{" "}
               </Link>
