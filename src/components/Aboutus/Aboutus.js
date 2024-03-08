@@ -49,7 +49,7 @@ export default function Aboutus() {
             <Link to="/contacts">
               <button className={style.btnReadmore}>Contact</button>
             </Link>
-            <Link to="/allServices">
+            <Link to="/login">
               <button className={style.btnReadmore}>Book</button>
             </Link>
           </div>
